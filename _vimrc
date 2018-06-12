@@ -23,6 +23,9 @@ Plug 'Townk/vim-autoclose'
 " Html
 Plug 'mattn/emmet-vim'
 
+" Js
+Plug 'maksimr/vim-jsbeautify'
+
 " Themes and interface
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -66,6 +69,7 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 " Mappings Config
 """"""""""""""""""""
 map <C-n> :NERDTreeToggle<CR>
+map <c-f> :call JsBeautify()<cr>
 
 " shortcuts
 nnoremap <Leader>o :CtrlP<CR>
