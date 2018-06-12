@@ -20,10 +20,13 @@ Plug 'Shougo/neocomplete.vim'
 " Generic programming stuff
 Plug 'Townk/vim-autoclose'
 
+" Html
+Plug 'mattn/emmet-vim'
+
 " Themes and interface
-Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
 
@@ -36,6 +39,9 @@ call plug#end()
 set number
 set ruler
 
+" tab stuff
+set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
+
 " current line highlight
 set cursorline
 
@@ -43,11 +49,12 @@ set cursorline
 colorscheme glowfish
 if has('gui_running')
 	set guioptions-=T "no toolbar
-	set guifont=Fira\ Code
+	set guifont=Hack:h10
 endif
 
 " airline stuff
 let g:airline_theme='deus'
+let g:airline_powerline_fonts = 1
 
 " neocomplete stuff
 let g:acp_enableAtStartup = 0
