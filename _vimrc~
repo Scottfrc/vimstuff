@@ -24,6 +24,7 @@ Plug 'Townk/vim-autoclose'
 Plug 'ryanoasis/vim-devicons'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'daylerees/colour-schemes', { "rtp": "vim/"}
 
 call plug#end()
 
@@ -46,9 +47,6 @@ if has('gui_running')
 	set guifont=Fira\ Code
 endif
 
-" airline stuff
-let g:airline_theme='deus'
-
 " neocomplete stuff
 let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
@@ -61,4 +59,4 @@ let g:neocomplete#sources#syntax#min_keyword_length = 3
 map <C-n> :NERDTreeToggle<CR>
 
 " shortcuts
-nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>O :CtrlP<CR>
