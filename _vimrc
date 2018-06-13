@@ -23,6 +23,9 @@ Plug 'Townk/vim-autoclose'
 " Html
 Plug 'mattn/emmet-vim'
 
+" .Net
+Plug 'Omnisharp/omnisharp-vim'
+
 " Js
 Plug 'maksimr/vim-jsbeautify'
 
