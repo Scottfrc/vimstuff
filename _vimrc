@@ -30,6 +30,7 @@ Plug 'Omnisharp/omnisharp-vim'
 Plug 'maksimr/vim-jsbeautify'
 
 " Themes and interface
+Plug 'daylerees/colour-schemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ryanoasis/vim-devicons'
@@ -41,9 +42,10 @@ call plug#end()
 """"""""""""""""""
 " General Config
 """"""""""""""""""
-" line numbers
+" line numbers and window stuff
 set number
 set ruler
+set lines=45 columns=150
 
 " tab stuff
 set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
@@ -52,7 +54,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 set cursorline
 
 " styling
-colorscheme glowfish
+colorscheme halflife
 if has('gui_running')
 	set guioptions-=T "no toolbar
 	set guifont=Hack:h10
@@ -67,6 +69,10 @@ let g:acp_enableAtStartup = 0
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
 let g:neocomplete#sources#syntax#min_keyword_length = 3
+
+" Netrw stuff
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
 
 """"""""""""""""""""
 " Mappings Config
